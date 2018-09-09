@@ -1,0 +1,52 @@
+.heading-primary {
+    color:$color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+    &--main{
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        display: block;
+        animation-name: moveInLeft;
+        animation-duration: 3s;
+    }
+    
+    &--sub{
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.74rem;
+        display: block;
+        animation-name: moveInRight;
+        animation-duration: 3s;
+    }    
+}
+
+.section-about {
+    background-color: $color-gray-light-1;
+    padding: 25rem 0;
+    margin-top: -20vh;
+}
+
+.section-features {
+    margin-top: -12vh;
+    padding: 20rem 0;
+    background-image: linear-gradient(to right,
+    rgba($color-primary-light, 0.8),
+    rgba($color-primary-dark, 0.8))
+    , url(../img/nat-4.jpg);
+    background-size: cover;
+    background-position: top;
+    transform: skewY(-7deg);
+
+    & > * {
+        transform: skewY(7deg);
+    }
+}
+
+.section-tours {
+    background-color: $color-gray-light-1;
+    padding: 25rem 0 50rem 0;
+    margin-top: -20vh;   
+}
